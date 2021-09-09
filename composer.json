@@ -1,0 +1,59 @@
+{
+  "name": "php-twinfield/twinfield",
+  "type": "library",
+  "description": "Library for using the Twinfield Soap Service.",
+  "keywords": [
+    "twinfield"
+  ],
+  "homepage": "https://github.com/php-twinfield/twinfield",
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Remco Tolsma",
+      "email": "remcotolsma@pronamic.nl"
+    },
+    {
+      "name": "Leon Rowland",
+      "email": "leon@pronamic.nl"
+    }
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "conflict": {
+    "pronamic/twinfield": "*"
+  },
+  "replace": {
+    "pronamic/twinfield": "*"
+  },
+  "require": {
+    "php": ">=7.3",
+    "ext-dom": "*",
+    "ext-json": "*",
+    "ext-soap": "*",
+    "moneyphp/money": "^3.0 || ^4.0",
+    "myclabs/php-enum": "^1.5",
+    "psr/http-message": "^1.0",
+    "psr/log": "^1.0",
+    "webmozart/assert": "^1.2"
+  },
+  "suggest": {
+    "league/oauth2-client": "If you want to use OAuth to login"
+  },
+  "autoload": {
+    "psr-4": {
+      "PhpTwinfield\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests/"
+    ]
+  },
+  "require-dev": {
+    "eloquent/liberator": "^2.0",
+    "league/oauth2-client": "^2.2",
+    "phpstan/phpstan": "^0.12.88",
+    "phpunit/phpunit": "^9.5"
+  }
+}
